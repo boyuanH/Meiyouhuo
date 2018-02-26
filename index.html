@@ -29,7 +29,28 @@
     <link rel="stylesheet" href="css/commonstyle.css"/>
     <link rel="stylesheet" href="css/slide_share.css"/>
 </head>
-<body>
-
+<body id="nv_portal" class="pg_index" onkeydown="if(event.keyCode==27) return false;">
+<div id="append_parent">
+</div>
+<div id="ajaxwaitid">
+</div>
+<div id="toplist" class="cl">
+    <div class="wp">
+        <div class="z">
+            <a href="javascript:;" onclick="setHomepage(&#39;https://www.chiphell.com/&#39;);">
+                设为首页
+            </a>
+            <a href="https://www.chiphell.com/" onclick="addFavorite(this.href, &#39;Chiphell - 分享与交流用户体验&#39;);return false;">
+                收藏本站
+            </a>
+        </div>
+        <div class="y">
+            <a id="switchblind" href="javascript:;" onclick="toggleBlind(this)" title="开启辅助访问"
+               class="switchblind">
+                开启辅助访问
+            </a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
